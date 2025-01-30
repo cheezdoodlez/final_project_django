@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="{% static 'js/app.js' %}"></script>
+</head>
+<body>
+    <h1>My Grocery List</h1>
+    <div id="grocery-list"></div>
+
+    <h1>My Ingredients</h1>
+    <div id="ingredient-list"></div>
+    <h2>Add New Ingredient</h2>
+    <input type="text" id="ingredient-name" placeholder="Enter ingredient name" />
+    <button id="add-ingredient-btn">Add Ingredient</button>
+
+    <h1>My Meal Plans</h1>
+    <h2>Add New Meal Plan</h2>
+    <input type="text" id="mealplan-name" placeholder="Enter meal plan name" />
+    <button id="add-mealplan-btn">Add Meal Plan</button>
+
+    <div id="mealplan-list"></div>
+
+    <h1>Recipe Finder</h1>
+
+    <div>
+        <h2>Search Recipes by Ingredients</h2>
+        <input type="text" id="ingredients" placeholder="Enter ingredients (e.g., chicken, garlic)" />
+        <input type="number" id="number" placeholder="Number of results" value="10" />
+        <button id="search-recipes-btn">Search Recipes</button>
+    </div>
+
+    <div id="recipe-list"></div>
+
+    <div>
+        <h2>Search Recipes by Name</h2>
+        <input type="text" id="search-query" placeholder="Search by recipe name" />
+        <button id="search-query-btn">Search</button>
+    </div>
+
+    <div id="recipe-details"></div>
+
+    <div>
+        <h2>Generate Recipe from Ingredients</h2>
+        <input type="text" id="generate-ingredients" placeholder="Enter ingredients" />
+        <button id="generate-recipe-btn">Generate Recipe</button>
+    </div>
+</body>
+</html>
